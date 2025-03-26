@@ -59,7 +59,7 @@ int main() {
     
     //////////////////////////////////////////////////////////////////////////////////////
 
-    // [1] File I/O stream
+    // [2] File I/O stream
     
     // fopen() tries to open a file for reading "r", writing "w", or appending "a".
     // supports the relative and absolute file paths.
@@ -82,7 +82,7 @@ int main() {
         return 1;
     }
 
-    // [1.1] <- Output: write chars, strings, and format strings to the standard output stream.
+    // [2.1] <- Output: write chars, strings, and format strings to the standard output stream.
 
     printf("\n<- Writing to the File output stream:\n");
 
@@ -96,7 +96,7 @@ int main() {
     // String placeholders support different specifiers for: types (e.g. %s), different representations (e.g. %x), field width (e.g. %.2f). 
     fprintf(out_file, " %s.\n", "THE BEAUTIFUL\0 This part will not be written."); // %s stops writing at the NULL char '\0'.
 
-    // [1.2] -> Input: read chars, strings, and format strings from the file input stream.
+    // [2.2] -> Input: read chars, strings, and format strings from the file input stream.
     
     printf("\n-> Reading from the File input stream:\n");
 
